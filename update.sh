@@ -110,7 +110,7 @@ run_update() {
     echo -e "${CYAN}Installing SQLite3...${NC}"
     apt-get install sqlite3 -y > /dev/null 2>&1
     # 2. Download & Ekstrak Menu
-    wget https://github.com/hokagelegend9999/alpha.v2/raw/refs/heads/main/menu/menu.zip
+    wget https://raw.githubusercontent.com/Fatehfadz/source/refs/heads/main/menu/menu.zip
     unzip -o menu.zip > /dev/null 2>&1
     chmod +x menu/*
     mv menu/* /usr/local/sbin/
