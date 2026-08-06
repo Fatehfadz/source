@@ -20,7 +20,7 @@ function ovpn_install() {
     
     # Menghapus >/dev/null agar proses download terlihat
     echo "Mengunduh file konfigurasi VPN..."
-    wget -O /etc/openvpn/vpn.zip "https://github.com/hokagelegend9999/alpha.v2/raw/refs/heads/main/ssh/vpn.zip"
+    wget -O /etc/openvpn/vpn.zip "https://raw.githubusercontent.com/Fatehfadz/source/refs/heads/main/ssh/vpn.zip"
     
     # Deteksi jika file zip gagal diunduh atau ukurannya 0 byte
     if [ ! -s /etc/openvpn/vpn.zip ]; then
@@ -252,7 +252,7 @@ function cert_ovpn() {
     zip Kyt-Project.zip tcp.ovpn udp.ovpn ssl.ovpn ws-ssl.ovpn > /dev/null 2>&1
 
     # --- 3. DOWNLOAD LOGO ---
-    wget -q -O /var/www/html/logo.png "https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/main/ssh/logo.png"
+    wget -q -O /var/www/html/logo.png "https://raw.githubusercontent.com/Fatehfadz/source/refs/heads/main/ssh/logo.png"
     if [ ! -f /var/www/html/logo.png ]; then
         wget -q -O /var/www/html/logo.png "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
     fi
